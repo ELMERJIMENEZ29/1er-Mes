@@ -208,3 +208,17 @@ window.addEventListener("beforeunload", () => {
   clearInterval(autoCarousel);
 });
 
+// Reproduce música después de la primera interacción
+document.addEventListener("click", function() {
+  const music = document.getElementById("background-music");
+  music.muted = false;
+  music.play().catch(() => {});
+}, { once: true });
+
+// Para pantallas táctiles
+document.addEventListener("touchstart", function() {
+  const music = document.getElementById("background-music");
+  music.muted = false;
+  music.play().catch(() => {});
+}, { once: true });
+
