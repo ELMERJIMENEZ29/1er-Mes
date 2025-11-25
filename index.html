@@ -1,85 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Cumpleaños Mamita</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Primer Mes, Mi Amor</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- Telón de Teatro -->
-<div id="curtain">
-    <h1>Feliz cumpleaños mamita, espero que este pequeño detalle sea de tu agrado</h1>
-    <button id="open-button">Presiona este botón y sorpréndete</button>
+<div id="intro">
+  <div class="heart"></div>
+  <p class="intro-text">Tengo algo especial para ti... ❤️</p>
 </div>
 
-<!-- Música de fondo -->
-<audio id="background-music" src="audio/Las-Mañanitas.mp3" loop></audio>
+<!-- Música de fondo (archivo local, igual que tenías) -->
+<audio id="background-music" src="audio/3AM - Por Ti.mp3" loop></audio>
 
 <!-- Contenido principal (oculto al inicio) -->
 <div id="main-content" style="display: none;">
-    <section class="poem">
-        <h2>Feliz Cumpleaños para la mejor mamá del mundo</h2>
-        <p id="poem-text"></p>
-    </section>
-    
-    <section class="memories">
-        <h2>TE DEJO UNOS RECUERDOS IMBORRABLES, QUE HOY SEA UN DÍA MARAVILLOSO</h2>
-    </section>
+  <section class="poem">
+    <h2>Un mes contigo, y ya hiciste mi mundo más bonito</h2>
+    <p id="poem-text"></p>
+  </section>
 
-    <div id="hidden-message" style="display: none;">
-        <h3>🌟 Mamita, gracias por ser mi luz en la vida. Te amo muchísimo. 🌟</h3>
+  <!-- Contador del tiempo juntos -->
+  <section class="counter">
+    <h2>Tiempo juntos 💘</h2>
+    <p id="time-together">0 días • 0 horas • 0 min • 0 seg</p>
+  </section>
+
+  <!-- Carta romántica -->
+  <section class="letter">
+    <h2>Mi cartita para ti ❤️</h2>
+    <p id="letter-text"></p>
+  </section>
+
+  <!-- Mensaje secreto y botón beso -->
+  <section class="secret-section">
+    <button id="secret-button" class="btn">💗 Descubre tu mensaje secreto</button>
+    <div id="secret-message" class="hidden-box" style="display:none;">
+      <h3>💖 Gracias por llegar a mi vida. Eres mi persona favorita. Te amo. 💖</h3>
     </div>
 
-    <section class="carousel">
-        <div class="carousel-container" id="carousel-container">
-            <img src="images/IMG1.jpg" class="active" alt="Foto 1">
-            <img src="images/IMG2.jpg" alt="Foto 2">
-            <img src="images/IMG3.jpg" alt="Foto 3">
-            <img src="images/IMG4.jpg" alt="Foto 4">
-            <img src="images/IMG5.jpg" alt="Foto 5">
-            <img src="images/IMG6.jpg" alt="Foto 6">
-            <img src="images/IMG7.jpg" alt="Foto 7">
-            <img src="images/IMG8.jpg" alt="Foto 8">
-            <img src="images/IMG9.jpg" alt="Foto 9">
-            <img src="images/IMG10.jpg" alt="Foto 10">
-            <img src="images/IMG11.jpg" alt="Foto 11">
-            <img src="images/IMG12.jpg" alt="Foto 12">
-            <img src="images/IMG13.jpg" alt="Foto 13">
-            <img src="images/IMG14.jpg" alt="Foto 14">
-            <img src="images/IMG15.jpg" alt="Foto 15">
-            <img src="images/IMG16.jpg" alt="Foto 16">
-            <img src="images/IMG17.jpg" alt="Foto 17">
-            <img src="images/IMG18.jpg" alt="Foto 18">
-            <img src="images/IMG19.jpg" alt="Foto 19">
-            <img src="images/IMG20.jpg" alt="Foto 20">
-            <img src="images/IMG21.jpg" alt="Foto 21">
-            <img src="images/IMG22.jpeg" alt="Foto 22">
-            <img src="images/IMG23.jpg" alt="Foto 23">
-            <img src="images/IMG24.jpg" alt="Foto 24">
-            <img src="images/IMG25.jpg" alt="Foto 25">
-            <img src="images/IMG26.jpg" alt="Foto 26">
-            <img src="images/IMG27.jpg" alt="Foto 27">
-            <img src="images/IMG28.jpeg" alt="Foto 28">
-            <img src="images/IMG29.jpg" alt="Foto 29">
-            <img src="images/IMG30.jpg" alt="Foto 30">
-            <img src="images/IMG31.jpg" alt="Foto 31">
-        </div>
-        <div class="carousel-controls">
-            <button onclick="prevImage()">⟨</button>
-            <button onclick="nextImage()">⟩</button>
-        </div>
-    </section>
+    <button id="kiss-button" class="btn">😘 Toca para un beso</button>
+    <div id="kiss-effect" class="kiss" style="display:none;">💋</div>
+  </section>
 
-    <footer class="final-message fade-in">
-        <p>Gracias por ser la luz de mi vida, mamita. Hoy celebramos tu existencia, y siempre celebraré tenerte en mi corazón. ¡Te amo infinitamente! 💖</p>
-    </footer>
+  <!-- Recuerdos -->
+  <section class="memories">
+    <h2>Nuestros momentos 💞</h2>
+  </section>
+
+  <!-- Carrusel (EXACTO como tú lo tenías) -->
+  <section class="carousel">
+    <div class="carousel-container" id="carousel-container">
+        <img src="images/IMG32.jpg" class="active" alt="Foto 1">
+        <img src="images/IMG33.jpg" alt="Foto 2">
+        <img src="images/IMG34.jpg" alt="Foto 3">
+        <img src="images/IMG35.jpg" alt="Foto 4">
+        <img src="images/IMG36.jpg" alt="Foto 5">
+        <img src="images/IMG37.jpg" alt="Foto 6">
+        <img src="images/IMG38.jpg" alt="Foto 7">
+        <img src="images/IMG39.jpg" alt="Foto 8">
+        <img src="images/IMG40.jpg" alt="Foto 9">
+        <img src="images/IMG41.jpg" alt="Foto 10">
+        <img src="images/IMG42.jpg" alt="Foto 11">
+        <img src="images/IMG43.jpg" alt="Foto 12">
+        <img src="images/IMG44.jpg" alt="Foto 13">
+        <img src="images/IMG45.jpg" alt="Foto 14">
+        <img src="images/IMG46.jpg" alt="Foto 15">
+        <img src="images/IMG47.jpg" alt="Foto 16">
+        <img src="images/IMG48.jpg" alt="Foto 17">
+        <img src="images/IMG49.jpg" alt="Foto 18">
+        <img src="images/IMG50.jpg" alt="Foto 19">
+        <img src="images/IMG51.jpg" alt="Foto 20">
+        <img src="images/IMG52.jpg" alt="Foto 21">
+        <img src="images/IMG53.jpg" alt="Foto 22">
+    </div>
+    <div class="carousel-controls">
+        <button onclick="prevImage()">⟨</button>
+        <button onclick="nextImage()">⟩</button>
+    </div>
+  </section>
+
+  <footer class="final-message fade-in">
+    <p>Gracias por este primer mes hermoso. Esto recién empieza, mi amor. ❤️✨</p>
+  </footer>
 </div>
+
 <!-- corazones flotando -->
 <div id="hearts-container"></div>
 
-<script src="script.js"></script>
+<!-- confetti lib -->
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
