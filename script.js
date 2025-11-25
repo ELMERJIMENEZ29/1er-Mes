@@ -197,7 +197,7 @@ kissButton.addEventListener("click", () => {
 /* -----------------------------
    Auto-rotación del carrusel cada cierto tiempo (opcional)
    ----------------------------- */
-let autoCarousel = setInterval(nextImage, 5000); // cambia cada 5s
+let autoCarousel = setInterval(nextImage, 6000); // cambia cada 5s
 
 /* -----------------------------
    Limpieza si se necesita (no estrictamente necesaria)
